@@ -51,6 +51,23 @@ Para que os objetos não se desloquem pelos limites dos obstáculos, foi aplicad
 
 ![image](https://github.com/user-attachments/assets/0ad4f900-9f12-444d-a6a6-e25b0b550b05)
 
+##
+### Máquina de Estados Finita
+
+A máquina de estados finita é uma máquina abstrata que pode estar em exatamente um de entre um número finito de estados a qualquer momento. Cada estado descreve uma ação a ser realizada por um NPC e as condições de transição. Uma transição indica uma mudança de estado e é descrita por uma condição que precisa ser realizada para que a transição ocorra.
+
+Neste projeto, a transição ocorre quando o jogador entra dentro da àrea de deteção (branco) à volta do NPC.
+
+![image](https://github.com/user-attachments/assets/7120899c-676f-4b70-aca2-e65467dac5b0)
+ 
+
+Enquanto o jogador se encontrar fora desta área, o objeto movimenta-se aleatoriamente sobre o mapa, em estado de patrulha. 
+
+![image](https://github.com/user-attachments/assets/b3e488c0-f03c-4d2e-9915-067dc86ce29b)
+
+Assim que o jogador entra dentro da àrea de deteçâo do objeto, a màquina de estados transiciona para o estado de perseguição, seguindo o jogador até que este volte a sair da àrea de deteção do NPC.
+
+![image](https://github.com/user-attachments/assets/97275233-50fc-45d3-9b16-a06262d3340a)
 
 ##
 
