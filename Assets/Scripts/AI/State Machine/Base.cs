@@ -14,7 +14,7 @@ public class Base : MonoBehaviour, IMoveable, ITriggerCheck
     public UnitChaseState ChaseState { get; set; }
 
     // idle variable
-    public float RandMoveSpeed = 5f;
+    public float MoveSpeed = 5f;
 
 
     private void Awake()

@@ -33,7 +33,7 @@ public class UnitIdleState : UnitState
             enemy.StateMachine.ChangeState(enemy.ChaseState);
 
         _direction = (_targetpos - enemy.transform.position).normalized;
-        enemy.MoveUnit(_direction * enemy.RandMoveSpeed);
+        enemy.MoveUnit(_direction * enemy.MoveSpeed);
 
         if((enemy.transform.position - _targetpos).sqrMagnitude < 0.01f)
         {
